@@ -16,24 +16,23 @@
   box-sizing: border-box;
 }
 
-:root{
-  --fundo-principal: #e6e6e6;
+:root {
+  --fundo-principal: #e3e0e0;
   --texto: #222222;
   --texto-inverso: #ffffff;
   --destaque: #0077FF;
   --destaque-inverso: #66bbff;
   --fundo-card: #ffffff;
+  --fundo-form: #f5f5f5;
 }
 
-body {
-  height: 100vh;
-  width: 100vw;
+body, html {
   font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.5;
+  line-height: 1.7;
   background-color: var(--fundo-principal);
 }
 
-header{
+header {
   background-color: var(--destaque);
 }
 
@@ -43,67 +42,81 @@ header ul {
   list-style-type: none;
 }
 
-.icons_head{
-  fill: #ffffff;
+header li {
+  margin: 15px 20px 5px 20px;
 }
 
-.icons_head:hover{
+header li:hover {
   background-color: var(--destaque-inverso);
   fill: var(--destaque);
   transition: .35s;
 }
 
-header button{
+.icons_head {
+  fill: #ffffff;
+}
+
+header button {
   border: none;
   background-color: transparent;
 }
 
 main {
   display: grid;
-  grid-template: auto / 2% 1fr 2%;
-  grid-auto-rows: auto;
-  width: 100%;
+  grid-template-columns: 0px 1fr 0px;
+}
+
+main h1 {
+  color: var(--destaque);
+}
+
+.cards{
+  padding: 20px;
+  margin: 20px 15px 0px 15px;
+  background-color: var(--fundo-card);
+  border-radius: 15px;
 }
 
 aside {
-  background-color: rgba(255, 0, 0, 0.13);
   grid-column: 2 / -3;
-  width: 100vw;
-  padding: 10px;
-  margin: 10px;
+}
+
+aside figure {
+  width: 200px;
+  margin: auto;
+}
+
+aside img {
+  display: block;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  padding: 5px;
+  border-radius: 50%;
+  border: solid 5px var(--destaque);
 }
 
 section {
-  background-color: rgba(172, 255, 47, 0.192);
   grid-column: 2 / -3;
-  width: 100vw;
-  padding: 10px;
-  margin: 10px;
 }
 
-#apresenta{
-  width: 100vw;
+#apresenta iframe {
+  max-width: 100%;
+  height: auto;
 }
 
-#apresenta iframe{
-  width: 90%;
-  height: 100%;
-}
-
-#skills ul{
+#skills ul {
   list-style-type: none;
 }
 
-#projetos img{
+#projetos img {
+  display: block;
+  max-width: 100%;
+  height: auto;
   object-fit: contain;
 }
 
-.caixa_projetos{
-  width: 100vw;
-}
 
-@media screen and (min-width: 768px){
-  main{
-    background-color: red;
-  }
-}
+/*@media screen and (min-width: 768px) {
+  
+}*/
