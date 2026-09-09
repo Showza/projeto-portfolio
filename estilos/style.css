@@ -52,13 +52,15 @@ header li:hover {
   transition: .35s;
 }
 
-.icons_head {
-  fill: #ffffff;
-}
-
 header button {
   border: none;
   background-color: transparent;
+}
+
+.icons_head {
+  fill: #ffffff;
+  height: 18px;
+  width: 18px;
 }
 
 main {
@@ -66,8 +68,15 @@ main {
   grid-template-columns: 0px 1fr 0px;
 }
 
-main h1 {
+main h1, h2 {
   color: var(--destaque);
+}
+
+main h2{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
 }
 
 .cards{
@@ -75,6 +84,12 @@ main h1 {
   margin: 20px 15px 0px 15px;
   background-color: var(--fundo-card);
   border-radius: 15px;
+}
+
+.icons_main{
+  fill: var(--destaque);
+  height: 30px;
+  width: 30px;
 }
 
 aside {
@@ -96,13 +111,23 @@ aside img {
   border: solid 5px var(--destaque);
 }
 
+#sociais{
+  text-align: center;
+  padding-top: 10px;
+}
+
+aside a{
+  padding: 10px;
+  display: inline-block;
+}
+
 section {
   grid-column: 2 / -3;
 }
 
+
 #apresenta iframe {
-  max-width: 100%;
-  height: auto;
+  border-radius: 10px;
 }
 
 #skills ul {
