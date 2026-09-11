@@ -34,6 +34,8 @@ body, html {
 
 header {
   background-color: var(--destaque);
+  position: fixed;
+  width: 100%;
 }
 
 header ul {
@@ -94,6 +96,10 @@ main h2{
 
 aside {
   grid-column: 2 / -3;
+  padding: 20px;
+  margin: 70px 15px 0px 15px;
+  background-color: var(--fundo-card);
+  border-radius: 15px;
 }
 
 aside figure {
@@ -142,6 +148,13 @@ section {
 
 #skills ul {
   list-style-type: none;
+}
+
+.icons_skills{
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  transform: translateY(-10%);
 }
 
 #projetos img {
