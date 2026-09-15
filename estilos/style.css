@@ -7,7 +7,7 @@
 }
 
 :root {
-  --fundo-principal: #cbcbcb;
+  --fundo-principal: #e7e6e6;
   --texto: #222222;
   --texto-inverso: #ffffff;
   --destaque: #0077FF;
@@ -205,11 +205,64 @@ section {
   border-radius: 10px;
 }
 
+.cursos_formacao{
+  background-color: var(--fundo-principal);
+  margin-top: 10px;
+  padding: 0px 10px;
+  border-radius: 10px;
+  border-left: var(--destaque-inverso) 5px solid;
+  transition: 0.5s;
+}
+
+.cursos_formacao h3{
+  color: var(--destaque-inverso);
+}
+
+.cursos_formacao time{
+  font-weight: bolder;
+}
+
+.cursos_formacao:hover{
+  border-left: var(--destaque) 15px solid;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.caixa_projetos{
+  background-color: var(--fundo-principal);
+  margin: 10px 0px 25px 0px;
+  padding: 10px 10px;
+  border-radius: 10px;
+  border-left: var(--destaque-inverso) 5px solid;
+  transition: 0.5s;
+}
+
+.caixa_projetos:hover{
+  border-left: var(--destaque) 15px solid;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
 #projetos img {
   display: block;
   max-width: 100%;
   height: auto;
   object-fit: contain;
+  border-radius: 10px;
+  margin: 5px 0px 20px 0px;
+}
+
+footer{
+  background-color: var(--destaque);
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+}
+
+footer a{
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bolder;
 }
 
 
