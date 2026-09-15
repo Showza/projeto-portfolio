@@ -69,14 +69,6 @@ main h1, h2 {
   border-radius: 15px;
 }
 
-.icons_main {
-  fill: var(--destaque);
-  height: 25px;
-  width: 25px;
-  vertical-align: middle;
-  transform: translateY(-10%);
-}
-
 aside {
   grid-column: 2 / -3;
   padding: 20px;
